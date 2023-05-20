@@ -1,4 +1,4 @@
-package utilities;
+package pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -7,10 +7,11 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static utilities.TestBase.driver;
+
 
 
 public class DemoqaWebsitePages  {
+    static WebDriver driver;
 
     public static Object getHeadersText(int index) {
         List<WebElement> headrTextList = driver.findElements(By.xpath("//div[@class='rt-th rt-resizable-header -cursor-pointer']"));

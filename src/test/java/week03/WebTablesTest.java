@@ -2,13 +2,10 @@ package week03;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import utilities.TestBase;
 
-import java.util.List;
-
-import static utilities.DemoqaWebsitePages.*;
+import static pages.DemoqaWebsitePages.*;
+import static utilities.ReusableMethods.screenshotMethod;
 import static utilities.ReusableMethods.waitFor;
 
 public class WebTablesTest extends TestBase {
@@ -109,6 +106,7 @@ Step 4: Verify data for Kierra Gentry
         // Step 6: Call the "numberOfRows()" method and store the returned value in a variable named "actualNumberOfRows".
         int actualNumberofRows = numberOfRows() ;
         // Step 7: Assert that the "actualNumberOfRows" variable is equal to 5.
+
         Assert.assertEquals(20,actualNumberofRows);
         Assert.assertEquals(20,numberOfRows());
     }

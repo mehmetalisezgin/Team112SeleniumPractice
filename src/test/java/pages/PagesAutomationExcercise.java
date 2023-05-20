@@ -1,7 +1,8 @@
-package utilities;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import utilities.TestBase;
 
 public class PagesAutomationExcercise extends TestBase {
 

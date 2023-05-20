@@ -1,14 +1,12 @@
 package week02;
 
 import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.TestBase;
 
-import static utilities.PagesAutomationExcercise.*;
+import static pages.PagesAutomationExcercise.*;
 
 public class AutomationExercisesWebSite extends TestBase {
 

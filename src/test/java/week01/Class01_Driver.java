@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import static utilities.ReusableMethods.screenshotMethod;
+
 public class Class01_Driver {
 
 
@@ -16,7 +18,7 @@ public class Class01_Driver {
         // and assigned it to a variable named chromeDriver.
        WebDriver chromeDriver = new ChromeDriver() ;
        chromeDriver.get("https://www.amazon.com/");
-
+        screenshotMethod();
        // close() method is used to close the current browser or tab that the Webdriver instance is currently controlling.
        chromeDriver.close();
        // quit() method is used to close all browser windows and tabs that the Webdriver instance is currentlu controlling

@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.List;
 
+import static utilities.ReusableMethods.screenshotMethod;
+
 public class Class02_DriverMethods {
 
     public static void main(String[] args) {
@@ -19,7 +21,7 @@ public class Class02_DriverMethods {
         chromeDriver.manage().window().maximize();
         chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         chromeDriver.get("https://www.marksandspencer.com/");
-
+        screenshotMethod();
         // click on Kids button ==>> firstly we should define webelement
        // WebElement kidsButton = chromeDriver.findElement(By.linkText("Kids"));
         WebElement kidsButton = chromeDriver.findElement(By.xpath("//a[text()='Kids']"));
