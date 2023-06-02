@@ -102,9 +102,26 @@ Validate that the displayed products match the entered keyword.
     }
 
 
+
+
+
+    @Test
+    public void Test05() {
+        amazonPages.searchTextBoxSendText("Nutella") ;
+        // Click on the search button.
+        amazonPages.searchTextBoxButtonClick();
+        waitFor(1);
+        // Verify that the search results page is displayed with relevant products.
+        amazonPages.nutellaIsVissible();
+    }
     @Test
     public void Test01() {
-
+        amazonPages.searchTextBoxSendText("Nutella") ;
+        // Click on the search button.
+        amazonPages.searchTextBoxButtonClick();
+        waitFor(1);
+        // Verify that the search results page is displayed with relevant products.
+        amazonPages.nutellaIsVissible();
     }
 
 
