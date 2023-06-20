@@ -1,0 +1,1 @@
+{"uuid":"cdf650c1-a72b-4a9d-888b-7c3a36aa22f8","name":"week04.AmazonTest.setUp","children":["efde6241-eeb4-4873-abe9-0fecfab7e5aa"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1685812250821,"stop":1685812259247}],"afters":[],"start":1685812250819,"stop":1685812259247}
